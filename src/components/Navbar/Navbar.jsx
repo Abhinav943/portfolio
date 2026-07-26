@@ -1,17 +1,10 @@
 import { Moon,Sun } from "lucide-react";
 import { useState } from "react";
 import "./Navbar.css";
+import { navItems } from "../../data/navigation";
 
 export default function Navbar() {
   const [isDark, setIsDark] = useState(true);
-    const navItems = [
-      { label: "Home", href: "#home" },
-      { label: "Projects", href: "#projects" },
-      { label: "Open Source", href: "#opensource" },
-      { label: "Skills", href: "#skills" },
-      { label: "Journey", href: "#journey" },
-      { label: "Contact", href: "#contact" },
-    ];
   return (
     <nav className="navbar">
       <div className="navbar-container">

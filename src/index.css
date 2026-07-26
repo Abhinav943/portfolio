@@ -2,7 +2,7 @@ a {
     text-decoration: none;
 }
 :root {
-    --font-heading: "Sora", sans-serif;
+    --font-heading: "Inter", sans-serif;
     --font-body: "Inter", sans-serif;
     --font-code: "JetBrains Mono", monospace;
 }
@@ -27,6 +27,8 @@ a {
     --primary-light: #8A82FF;
 
     --cyan: #30D5FF;
+    
+    --gradient-primary: linear-gradient(135deg, #6C63FF 0%, #30D5FF 100%);
 
     /* Borders */
 
