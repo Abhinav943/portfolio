@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
 a {
     text-decoration: none;
 }
 :root {
-    --font-heading: "Inter", sans-serif;
-    --font-body: "Inter", sans-serif;
-    --font-code: "JetBrains Mono", monospace;
+    --font-heading: "Outfit", sans-serif;
+    --font-body: "Plus Jakarta Sans", sans-serif;
+    --font-code: monospace;
 }
 
 :root {
@@ -23,12 +25,12 @@ a {
 
     /* Accent */
 
-    --primary: #6C63FF;
-    --primary-light: #8A82FF;
+    --primary: #4F46E5;
+    --primary-light: #7C3AED;
 
     --cyan: #30D5FF;
     
-    --gradient-primary: linear-gradient(135deg, #6C63FF 0%, #30D5FF 100%);
+    --gradient-primary: linear-gradient(90deg, #3B82F6 0%, #A855F7 100%);
 
     /* Borders */
 
@@ -99,17 +101,7 @@ a {
 
 body {
 
-    background:
-
-        radial-gradient(circle at 20% 25%,
-            rgba(108, 99, 255, .18),
-            transparent 35%),
-
-        radial-gradient(circle at 80% 20%,
-            rgba(48, 213, 255, .12),
-            transparent 30%),
-
-        #05060A;
+    background: #030305;
 
     color: var(--text-primary);
 

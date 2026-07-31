@@ -1,0 +1,122 @@
+.journey-section {
+    padding: var(--section-padding) 0;
+}
+
+.journey-container {
+    width: min(var(--container), 94%);
+    margin: 0 auto;
+}
+
+.timeline-wrapper {
+    position: relative;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        rgba(108, 99, 255, 0) 0%, 
+        rgba(108, 99, 255, 0.4) 20%, 
+        rgba(48, 213, 255, 0.4) 80%, 
+        rgba(48, 213, 255, 0) 100%);
+    z-index: 1;
+}
+
+.timeline-events {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+}
+
+.timeline-dot {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--background);
+    border: 1px solid rgba(124, 92, 255, 0.3);
+    display: grid;
+    place-items: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-light);
+    transition: 0.3s;
+}
+
+.timeline-event:hover .timeline-dot {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 15px rgba(124, 92, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.timeline-event:nth-child(n+4) .timeline-dot {
+    border-color: rgba(48, 213, 255, 0.3);
+    color: var(--cyan);
+}
+
+.timeline-event:nth-child(n+4):hover .timeline-dot {
+    border-color: var(--cyan);
+    box-shadow: 0 0 15px rgba(48, 213, 255, 0.2);
+}
+
+.timeline-year {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+@media (max-width: 992px) {
+    .timeline-wrapper {
+        padding-left: 24px;
+    }
+    
+    .timeline-line {
+        top: 0;
+        bottom: 0;
+        left: 24px;
+        width: 1px;
+        height: auto;
+        background: linear-gradient(180deg, 
+            rgba(108, 99, 255, 0) 0%, 
+            rgba(108, 99, 255, 0.4) 20%, 
+            rgba(48, 213, 255, 0.4) 80%, 
+            rgba(48, 213, 255, 0) 100%);
+    }
+
+    .timeline-events {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .timeline-event {
+        flex-direction: row;
+        width: 100%;
+        text-align: left;
+    }
+
+    .timeline-dot {
+        margin-bottom: 0;
+        margin-right: 1.5rem;
+        flex-shrink: 0;
+        z-index: 2;
+    }
+}

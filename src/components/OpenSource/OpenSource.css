@@ -1,0 +1,154 @@
+.opensource-section {
+    padding: var(--section-padding) 0;
+}
+
+.opensource-container {
+    width: min(var(--container), 94%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.os-left .section-badge {
+    color: var(--primary-light);
+}
+
+.zynex-card {
+    background: rgba(17, 21, 34, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.zynex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.zynex-title-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.zynex-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(124, 92, 255, 0.05));
+    border: 1px solid rgba(124, 92, 255, 0.2);
+    display: grid;
+    place-items: center;
+    color: var(--primary-light);
+}
+
+.zynex-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.zynex-published {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.npm-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(79, 70, 229, 0.2);
+    color: var(--primary-light);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.npm-btn:hover {
+    background: rgba(79, 70, 229, 0.3);
+}
+
+.zynex-desc {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 90%;
+}
+
+.zynex-stats {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.stat-icon-wrapper {
+    color: var(--text-muted);
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: white;
+}
+
+.zynex-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.feature-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.feature-icon.yellow { color: #FBBF24; }
+.feature-icon.purple { color: #A78BFA; }
+.feature-icon.blue { color: #60A5FA; }
+.feature-icon.red { color: #F87171; }
+.feature-icon.green { color: #34D399; }
+
+@media (max-width: 992px) {
+    .opensource-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .zynex-stats {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+}

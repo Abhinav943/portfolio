@@ -1,0 +1,58 @@
+.techstack-section {
+    padding: var(--section-padding) 0;
+}
+
+.techstack-container {
+    width: min(var(--container), 94%);
+    margin: 0 auto;
+}
+
+.techstack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.tech-card {
+    background: rgba(17, 21, 34, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1.8rem;
+    transition: 0.3s;
+}
+
+.tech-card:hover {
+    background: rgba(17, 21, 34, 0.6);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.tech-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.tech-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ts-icon { color: var(--text-secondary); }
+.ts-icon.cyan { color: #22D3EE; }
+.ts-icon.green { color: #34D399; }
+.ts-icon.orange { color: #F59E0B; }
+.ts-icon.red { color: #EF4444; }
+
+.tech-category {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.tech-list {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
